@@ -37,4 +37,4 @@ def convertAlacToFlac():
     except exceptions.CouldntDecodeError:
         return jsonify({"message": "Can't open this file. Should post file in m4a (Apple lossless) format."}), 400
 
-app.run(port=8000)
+app.run(port=14125, host="0.0.0.0")
