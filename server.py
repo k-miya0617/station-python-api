@@ -1,6 +1,8 @@
 # Dependencies: Flask, pydub, ffmpeg-python
 # (pip install Flask)
 
+# CAUTION: server.pyファイルがあるディレクトリに ffmpeg, ffplay, ffprobe 各種実行ファイルを配置すること
+
 from flask import Flask, jsonify, request, make_response
 from pydub import AudioSegment, exceptions
 from io import BytesIO
